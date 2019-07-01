@@ -160,6 +160,13 @@ footer{
 .success-svg{margin-left: 70%;}
 
 @media only screen and (max-width: 480px){
+    .index-footer{
+        position: fixed;
+        height:25px;
+        margin-bottom:0px;
+        bottom: 0; 
+    }	
+	
     #dashed{border-radius: 500px;width: 85%;}
 
     #dashed-left{border: 1.5px solid #f73466;width: 35%;}
