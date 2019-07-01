@@ -1,0 +1,198 @@
+/* Google Font (Product Sans) */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+body {
+	font-family: 'Product Sans';
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column; 
+}
+
+nav{visibility: hidden;}
+
+.container{background-color: #F5F5F5;}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border: 20px solid;
+    border-color: #fff transparent transparent transparent;
+    -webkit-filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.12));
+   	filter: drop-shadow(0px 3px 2px rgba(0,0,0,0.24));
+}
+
+.message{
+    padding: 20px;
+    color: #000;
+    line-height: 35px;
+    max-width: 90%;
+    display: inline-block;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.main{position: fixed;margin-top: 100px;}
+
+.no-shadows {box-shadow: none!important;}
+
+/* Fixed footer */
+footer{
+    bottom:0px;
+    left:0px;
+    right:0px;
+    height:50px;
+    margin-bottom:0px;
+}
+
+.main, .index-footer, .preloader-background{left: 0px; right: 0px;}
+
+.index-footer, .preloader-background{bottom: 0px;}
+
+.index-footer{
+    position: fixed;
+    height:50px;
+    margin-bottom:0px; 
+}
+
+.resume, .copyright{color: #4285F4;}
+
+.resume{font-size: 35px;line-height: 70px;}
+
+.copyright{
+    background-color: #fff;
+    background-size: cover;
+    width: 100%;
+}
+
+.preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #eee;
+	position: fixed;
+	z-index: 100;
+	top: 0px;	
+}
+
+.name{font-size: 300%;}
+
+#dashed{border-radius: 0px;}
+
+#dashed-left, #dashed-left-d2d, #dashed-left-cams, #dashed-left-string, #dashed-left-frontend, #dashed-left-backend,
+#dashed-left-frameworks, #dashed-left-softwares, #dashed-left-editors, #dashed-left-highlights, #dashed-left-interests,
+#dashed-left-personaldetails, #dashed-left-achievements{margin-left: 0;}
+
+#dashed-left, #dashed-center, #dashed-left-frontend, #dashed-left-frameworks{width: 15%;}
+
+#dashed, #dashed-left-d2d{width: 25%;}
+
+#dashed-left-d2d, #dashed-left-frontend{border: 1.5px solid #9C27B0;}
+
+#dashed-left-cams, #dashed-left-backend{border: 1.5px solid #2E7D32;width: 10%;}
+
+#dashed-left-string, #dashed-left-frameworks{border: 1.5px solid #2962FF;width: 13%;}
+
+#dashed-left-softwares, #dashed-left-interests{border: 1.5px solid #D50000;}
+
+#dashed, #dashed-left-editors, #dashed-left-highlights{border: 1.5px solid #ffde03;width: 12%;}
+
+#dashed-left-highlights, #dashed-left-softwares, #dashed-left-interests{width: 10%;}
+
+#dashed-left-interests{width: 9%;}
+
+#dashed-left-personaldetails{width: 20%;}
+
+#dashed-left-achievements{width: 14%;}
+
+#dashed-left{border: 1.5px solid #f73466;}
+
+#dashed-left-personaldetails, #dashed-left-achievements{border: 1.5px solid #0091EA;}
+
+#dashed-center{border: 1.5px solid #bbb;}
+
+.red, .yellow, .green, .blue{
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.red{background-color: #D50000;}
+
+.yellow{background-color: #ffde03;}
+
+.green, .blue{background-color: #bbb;}
+
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #fff !important;
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    transform: translateY(-7px);
+}
+
+.success-svg{margin-left: 70%;}
+
+@media only screen and (max-width: 480px){
+    #dashed{border-radius: 500px;width: 85%;}
+
+    #dashed-left{border: 1.5px solid #f73466;width: 35%;}
+
+    #dashed-left-d2d{width: 55%;}
+
+    #dashed-left-cams, #dashed-left-backend {border: 1.5px solid #2E7D32;}
+
+    #dashed-left-string, #dashed-left-frameworks{border: 1.5px solid #2962FF;}
+
+    #dashed-left-frontend, #dashed-left-d2d{border: 1.5px solid #9C27B0;}
+
+    #dashed-left-softwares, #dashed-left-interests{border: 1.5px solid #D50000;}
+
+    #dashed, #dashed-left-editors, #dashed-left-highlights{border: 1.5px solid #ffde03;}
+
+    #dashed-left-personaldetails, #dashed-left-achievements{border: 1.5px solid #0091EA;}
+
+    #dashed-left-cams, #dashed-left-softwares, #dashed-left-editors, #dashed-left-highlights, 
+    #dashed-left-interests {width: 20%;}
+
+    #dashed-left-string, #dashed-left-frontend, #dashed-left-backend, #dashed-left-frameworks, 
+    #dashed-left-personaldetails, #dashed-left-achievements{width: 25%;} 
+
+    #dashed-left, #dashed-left-d2d, #dashed-left-cams, #dashed-left-string, #dashed-left-frontend, #dashed-left-backend,
+    #dashed-left-frameworks, #dashed-left-softwares, #dashed-left-editors, #dashed-left-highlights, #dashed-left-interests,
+    #dashed-left-personaldetails, #dashed-left-achievements{border-radius: 50px;margin-left: 0;}
+
+    nav{visibility: visible;z-index: 9999;}
+
+    .sticky-nav{position: fixed;top: 0;left: 0;right: 0;}
+
+    .tskills{height: 100%;width: 100%;}
+
+    .success-svg{margin-left: 50%;}
+}

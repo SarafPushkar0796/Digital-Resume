@@ -1,0 +1,42 @@
+*{
+	font-family: 'Varela Round', sans-serif;
+	margin: 0; 
+	padding: 0;
+}
+
+h1{
+	font-size: 50px;
+	font-weight: bold;
+}
+
+h2{margin-top: 3%;}
+
+/* Dotted <hr> */
+hr{
+	border: dotted #E0E0E0 5px;
+	border-bottom: none;
+	width: 5%;
+	margin: 70px auto; 
+}
+
+.team-img{
+	position: relative;
+	opacity: 0.65;
+	background-image: url('../images/team.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 100%;
+}
+
+.team-container{
+	text-align: center;
+}
+
+.team-row{padding: 300px 0 300px 0;}
+
+.profile-img{
+	margin-top: 5%;
+	text-align: center;
+}
